@@ -1,32 +1,34 @@
 // CoffeeDrink object class
 
-class CoffeeDrink {
+class Drink {
 
     int numberOfCups;
-    String flavor;
+    String type;
     boolean hasWhippedCream;
 
     // Constructor for CoffeeDrink class
-    public CoffeeDrink(int paramNumberOfCups, String paramFlavor, boolean paramHasWhippedCream) {
-        // TODO
+    public Drink(int numberOfCups, String type, boolean hasWhippedCream) {
+        // to-do done
         // Edit this constructor to accept three parameters,
         // one for each CoffeeDrink variable.
         // Assign those parameter values to the class-wide variables.
-        flavor = paramFlavor;
-        numberOfCups = paramNumberOfCups;
-        hasWhippedCream = paramHasWhippedCream;
+        this.type = type;
+        this.numberOfCups = numberOfCups;
+        this.hasWhippedCream = hasWhippedCream;
 
     }
 
     // Method to print information about the CoffeeDrink
     public void printInfo() {
-        // TODO
+        // to-do done
         // Make this method print order details.
         // Include information stored in each variable.
-        if (hasWhippedCream == true){
-            System.out.println("Your drink has whipped cream");
-        } else {
-            System.out.println("your drink does not have whipped cream");
+        System.out.print("You ordered " + numberOfCups + " cups of " + type);
+        if (hasWhippedCream){
+            System.out.println("with whipped cream.");
+        }
+        else {
+            System.out.println("without whipped cream");
         }
 
     }
