@@ -32,14 +32,14 @@ public class JavaBeansAndBytes {
         }
         System.out.println("We were founded in " + yearFounded + ".");
 
-        // TODO
+        // to-do done
         yearFounded = 2007;
         System.out.println("Jk. We were actually founded in " + yearFounded + ".");
         // Update the year founded and print the new yearFounded in a sentence
 
         // Calling methods
         randomDiscount();
-        // TODO
+        // to do done
         // Add parameter to specialOfTheDay (drink of your choice)
         specialOfTheDay("hot chocolate");
         countCups();
@@ -47,6 +47,8 @@ public class JavaBeansAndBytes {
 
         // TODO
         // Create two CoffeeDrink objects
+
+
 
         // TODO
         // Print out the order details
@@ -65,7 +67,7 @@ public class JavaBeansAndBytes {
 
     // Method with a parameter for the special of the day
     public void specialOfTheDay(String special) {
-        // TODO
+        // to do done
         // Make this method accept a parameter representing the day’s special.
         // Print the day's special.
         System.out.println("Today's special is " + special + ".");
@@ -75,7 +77,7 @@ public class JavaBeansAndBytes {
     public void countCups() {
         System.out.println("Counting cups sold today:");
 
-        // TODO
+        // to do done
         // Write three different for loops that print the indicated numbers:
 
         // Print 1 to 5
@@ -101,6 +103,19 @@ public class JavaBeansAndBytes {
         // TODO
         // Make this method generate a random decimal between 0 and 1
         // and print one of four drink recommendations based on its value.
+        double randNum = (double) Math.random();
+        if ( randNum < 0.25) {
+            System.out.println("You should get a black coffee");
+        }
+        else if (randNum < 0.5) {
+            System.out.println("You should get an espresso");
+        }
+        else if (randNum < 0.75){
+            System.out.println("You should get bottle of water");
+        }
+        else if (randNum < 1){
+            System.out.println("You should go home");
+        }
     }
 }
 
